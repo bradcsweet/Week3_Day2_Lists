@@ -71,6 +71,15 @@ namespace Week3_Day2_Lists
                 Console.WriteLine(film);
             }
 
+
+            string [] faveFilmsArray = faveFilms.ToArray();
+            // when converting a list to an array, the types have to be the same. in this case "string"
+
+            List<string> favFilmsListFromFaveFilmsArray = faveFilmsArray.ToList<string>();
+            //variable name is funny. this is an example of converting an array to a list
+            
+
+
             List<string> faveAnimals = new List<string>();
             faveAnimals.Add("Lion");
             faveAnimals.Add("Tiger");
@@ -111,7 +120,7 @@ namespace Week3_Day2_Lists
             Console.WriteLine(numbers.Contains(77));
             Console.WriteLine(numbers.Contains(15));
 
-                
+            
                        
 
         }
